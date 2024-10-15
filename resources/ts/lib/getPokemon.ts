@@ -2,6 +2,8 @@ import axios from "axios"
 
 export const getPokemon = async () =>{
     const pokemon = localStorage.getItem('pokemon');
+    console.log('Checking Pokemon!')
+
     if(pokemon){
         console.log(`Pokemon in localStorage.`)
         const pokemonData = JSON.parse(pokemon);
