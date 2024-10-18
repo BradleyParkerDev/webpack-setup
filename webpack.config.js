@@ -87,6 +87,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin'); // Import the WebpackManifestPlugin
 
 module.exports = {
     mode: 'development',
@@ -127,6 +128,10 @@ module.exports = {
             template: path.resolve(__dirname, 'resources/templates/index.html'), // Path to the custom template
             filename: 'index.html', // Output file will be in the `public` folder
             inject: 'body', // Inject JS files at the end of the body tag
+        }),
+        new WebpackManifestPlugin({
+            fileName: 'manifest.json', // Name of the manifest file
+            publicPath: '/static/', // Specify the public path
         }),
     ],
     devServer: {
