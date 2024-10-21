@@ -1,6 +1,6 @@
 # Webpack Setup
 
-This project is a basic Webpack setup designed for handling TypeScript and CSS (with Tailwind CSS) in a modern JavaScript environment. It includes development and production configurations, cache busting, and CSS/JS bundling.
+My intention for creating this project was to provide interactivity on the client-side for my server-side rendered applications. This project is a basic Webpack setup designed for handling vanilla TypeScript and Tailwind CSS. It includes development and production configurations. In production, it utilizes cache busting──it produces a Tailwind CSS build and a JavaScript bundle. 
 
 ## Project Structure
 ```
@@ -58,7 +58,7 @@ Before running the project, make sure you have the following installed:
 
 ## Dependencies
 
-- **axios**: A promise-based HTTP client for making requests in your project.
+- **axios**: A promise-based HTTP client for making requests.
 - **rimraf**: A cross-platform tool for removing directories, used to clean the `./public/build` directory.
 
 ## DevDependencies
