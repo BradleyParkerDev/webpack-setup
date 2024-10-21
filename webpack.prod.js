@@ -19,7 +19,7 @@ module.exports = merge(common, {
         }),
         new WebpackManifestPlugin({
             fileName: 'manifest.json', // Name of the manifest file
-            publicPath: '/static/', // Specify the public path
+            publicPath: '/public/build/', // Specify the public path
         }),        
     ],
 })

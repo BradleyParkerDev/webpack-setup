@@ -1,6 +1,6 @@
 {
-  "main.css": "/static/css/main.02020add1cc7cbad1b79.css",
-  "main.js": "/static/js/main.ea8b58cb607539209ea1.bundle.js",
-  "main.css.map": "/static/css/main.02020add1cc7cbad1b79.css.map",
-  "main.bundle.js.map": "/static/js/main.ea8b58cb607539209ea1.bundle.js.map"
+  "main.css": "/public/build/css/main.02020add1cc7cbad1b79.css",
+  "main.js": "/public/build/js/main.ea8b58cb607539209ea1.bundle.js",
+  "main.css.map": "/public/build/css/main.02020add1cc7cbad1b79.css.map",
+  "main.bundle.js.map": "/public/build/js/main.ea8b58cb607539209ea1.bundle.js.map"
 }
