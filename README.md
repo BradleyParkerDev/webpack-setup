@@ -12,7 +12,11 @@ webpack-setup/
 │   ├── css/                # CSS files
 │   ├── templates/          # HTML template files
 │   ├── ts/                 # TypeScript files
-│   ├── index.html          # Main HTML template for HMR
+│   └── index.html          # Main HTML template for HMR
+├── .env                    # Environment variables
+├── .gitignore              # Git ignore file to exclude files and directories 
+├── .nvmrc                  # Node.js version manager configuration
+├── package-lock.json       # Exact versions of installed packages
 ├── package.json            # Project metadata and scripts
 ├── postcss.config.js       # Postcss configuration
 ├── tailwind.config.js      # Tailwind configuration
