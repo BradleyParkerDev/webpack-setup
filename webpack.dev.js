@@ -5,6 +5,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const {merge} = require('webpack-merge')
 const common = require("./webpack.common")
 
+require('dotenv').config();
+const WEBPACK_PORT = process.env.WEBPACK_PORT || 3000
 
 module.exports = merge( common, {
     mode: 'development',
@@ -33,7 +35,7 @@ module.exports = merge( common, {
                 directory: path.resolve(__dirname, 'public'),
             },
         ],
-        port: 3000,
+        port: WEBPACK_PORT,
         open: true,
         hot: true,
         compress: true,

@@ -1,6 +1,6 @@
 # Webpack Setup
 
-My intention for creating this project was to provide interactivity on the client-side for my server-side rendered applications. This project is a basic Webpack setup designed for handling vanilla TypeScript and Tailwind CSS. It includes development and production configurations. In production, it utilizes cache busting──it produces a Tailwind CSS build and a JavaScript bundle. 
+This is a basic Webpack setup designed to handle vanilla TypeScript and Tailwind CSS. I created this project to add interactivity to client-side elements in my server-side rendered applications. It includes both development and production configurations. In production, it employs cache busting──generating a Tailwind CSS build and a JavaScript bundle.
 
 ## Project Structure
 ```
