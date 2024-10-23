@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const {merge} = require('webpack-merge')
 const common = require("./webpack.common")
 
+// Load environment variable
 require('dotenv').config();
 const WEBPACK_PORT = process.env.WEBPACK_PORT || 3000
 
@@ -29,6 +30,7 @@ module.exports = merge( common, {
     devServer: {
         headers: {
             'Cache-Control': 'no-store',
+            'Access-Control-Allow-Origin': '*', // Allow cross-origin requests
         },
         static: [
             {
