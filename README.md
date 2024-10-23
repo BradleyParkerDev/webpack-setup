@@ -42,7 +42,13 @@ Before running the project, make sure you have the following installed:
    cd webpack-setup
    ```
 
-2. Install the required dependencies:
+2. Rename `example.env` to `.env`:
+
+   ```bash
+   mv example.env .env
+   ```
+
+3. Install the required dependencies:
 
    ```bash
    npm install
@@ -59,6 +65,7 @@ Before running the project, make sure you have the following installed:
 ## Dependencies
 
 - **axios**: A promise-based HTTP client for making requests.
+- **dotenv**: A module that loads environment variables from a `.env` file into process.env.
 - **rimraf**: A cross-platform tool for removing directories, used to clean the `./public/build` directory.
 
 ## DevDependencies
