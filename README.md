@@ -68,7 +68,6 @@ Before running the project, make sure you have the following installed:
 
 ## Dependencies
 
-- **axios**: A promise-based HTTP client for making requests.
 - **dotenv**: A module that loads environment variables from a `.env` file into process.env.
 - **rimraf**: A cross-platform tool for removing directories, used to clean the `./public/build` directory.
 
