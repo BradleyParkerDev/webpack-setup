@@ -68,7 +68,9 @@ Before running the project, make sure you have the following installed:
 
 ## Dependencies
 
+- **alpinejs**: Provides reactive, declarative behavior to HTML, adding interactivity without the need for a full JavaScript framework.
 - **dotenv**: A module that loads environment variables from a `.env` file into process.env.
+- **htmx.org**: Enables dynamic HTML updates with declarative syntax, making server-driven interactivity simple and lightweight.
 - **rimraf**: A cross-platform tool for removing directories, used to clean the `./public/build` directory.
 
 ## DevDependencies
