@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TypeScript + Tailwind</title>
-</head>
-<body class="flex justify-center items-center min-h-screen bg-slate-400 font-bold text-[30px] ">
-    <div class="flex flex-col justify-center items-center text-center">
-        <h1 class="underline text-[yellow] sm:text-[orange]">Webpack</h1>
 
-        <p id="message" class="text-[pink] sm:text-[green]"></p>
+</head>
+<body class="flex justify-center items-center min-h-screen font-bold text-[30px] ">
+    <div  class="flex flex-col justify-center items-center text-center">
+        <h1 class="underline sm:text-[red]">Webpack</h1>
+
+        <p id="message" class=" sm:text-[green]"></p>
+
+        <br/>
+        <div x-data="{ count: 0 }">
+
+            <span x-text="count"></span>
+            <div class="flex">
+                <button x-on:click="count > 0 ? count-- : 0" class="m-[20px] bg-[red] rounded-lg text-[white] p-4">
+                    Decrement
+                </button>                 
+                
+                <button x-on:click="count++" class="m-[20px] bg-[red] rounded-lg text-[white] p-4">
+                    Increment
+                </button> 
+
+            </div>
+
+           
+        </div>
+
+        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+
     </div>
 </body>
 </html>

@@ -1,0 +1,11 @@
+
+// Alpinejs
+declare module 'alpinejs' {
+    const Alpine: any;
+    export default Alpine;
+}
+  
+interface Window {
+    Alpine: any;
+}
+  

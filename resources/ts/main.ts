@@ -1,6 +1,13 @@
 /// <reference types="webpack/module" /> 
 import '../css/main.css';
 import messageInnerText from './lib';
+import Alpine from 'alpinejs'
+import 'htmx.org';
+
+window.Alpine = Alpine
+ 
+Alpine.start()
+
 
 
 // Get the element by ID and check for null
