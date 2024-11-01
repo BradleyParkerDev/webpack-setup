@@ -6,48 +6,57 @@
     <title>TypeScript + Tailwind</title>
 
 </head>
-<body class="flex justify-center items-center min-h-screen font-bold text-[30px] ">
-    <div  class="flex flex-col justify-center items-center text-center">
-        <h1 class="underline sm:text-[red]">Webpack</h1>
+<body>
 
-        <p id="message" class=" sm:text-[green]"></p>
+  <div class="flex justify-center items-center min-h-screen font-bold ">
+    <button class="bg-black rounded-[5px] p-[5px] font-normal text-white">Button</button>
+      <div  class="flex flex-col justify-center items-center text-center">
+          <h1 class="underline sm:text-[red]  text-[30px]">Webpack</h1>
 
-        <br/>
-        <div x-data="{ count: 0 }">
+          <p id="message" class=" sm:text-[green]  text-[30px]"></p>
 
-            <span x-text="count"></span>
-            <div class="flex">
-                <button x-on:click="count > 0 ? count-- : 0" class="m-[20px] bg-[red] rounded-lg text-[white] p-4">
-                    Decrement
-                </button>                 
-                
-                <button x-on:click="count++" class="m-[20px] bg-[red] rounded-lg text-[white] p-4">
-                    Increment
-                </button> 
+          <br/>
+          <div x-data="{ count: 0 }">
 
-            </div>
+              <span x-text="count"></span>
+              <div class="flex">
+                  <button x-on:click="count > 0 ? count-- : 0" class="m-[20px] bg-[red] rounded-lg text-[white] p-4">
+                      Decrement
+                  </button>                 
+                  
+                  <button x-on:click="count++" class="m-[20px] bg-[red] rounded-lg text-[white] p-4">
+                      Increment
+                  </button> 
 
-           
-        </div>
+              </div>
 
-        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
-        <h1 class="text-2xl font-bold mb-4">A simple HTMX request.</h1>
+            
+          </div>
 
-        <!-- Button to trigger HTMX request -->
-        <button
-          hx-get="http://localhost:3010/"  
-          hx-target="#result"
-          class="p-2 bg-blue-500 text-white rounded-lg"
-        >
-          Click to Test HTMX
-        </button>
-      
-        <!-- This will display the response from the server -->
-        <div id="result" class="mt-4 p-4 bg-white rounded shadow">
-          <!-- Server response will be displayed here -->
-        </div>
-      
-    </div>
+          <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+          <h1 class="text-2xl font-bold mb-4">A simple HTMX request.</h1>
+
+          <!-- Button to trigger HTMX request -->
+          <button
+            hx-get="https://jsonplaceholder.typicode.com/users"  
+            hx-target="#result"
+            class="p-2 bg-blue-500 text-white rounded-lg"
+            x-data = "{buttonText: 'Click to Test HTMX'}"
+            x-text="buttonText"
+          >
+            <!-- Click to Test HTMX -->
+          </button>
+        
+          <!-- This will display the response from the server -->
+          <div id="result" class="mt-4 p-4 bg-white rounded shadow">
+            <!-- Server response will be displayed here -->
+          </div>
+
+
+            
+      </div>
+  </div>
 </body>
+
 </html>
 
