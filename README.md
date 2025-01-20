@@ -1,6 +1,6 @@
 # Webpack Setup
 
-This is a basic Webpack setup designed to handle vanilla TypeScript and Tailwind CSS—it can add interactivity to client-side elements in a server-side rendered application; this setup includes Alpinejs and HTMX. It includes both development and production configurations. In production, it employs cache busting—generating a Tailwind CSS build and a JavaScript bundle.
+This is a basic Webpack setup designed to handle vanilla TypeScript and Tailwind CSS—it can add client-side interactivity to server-side rendered applications. This setup includes Alpinejs and HTMX—it also has development and production configurations. In production, it employs cache busting—generating a Tailwind CSS build and a JavaScript bundle.
 
 ## Project Structure
 ```
