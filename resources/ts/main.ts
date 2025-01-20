@@ -1,11 +1,14 @@
 /// <reference types="webpack/module" /> 
 import '../css/main.css';
-import messageInnerText from './lib';
+import lib from './lib';
 import Alpine from 'alpinejs'
 import 'htmx.org';
 
+const {messageInnerText, confettiComponent} = lib
+
+
 window.Alpine = Alpine
- 
+Alpine.data('confettiComponent', confettiComponent);
 Alpine.start()
 
 
