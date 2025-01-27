@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- htmx might require the selfRequestsOnly set to false in ssr applications -->
+    <meta name="htmx-config" content='{"selfRequestsOnly":false}'>
     <title>Webpack Setup</title>
 </head>
-<body class="bg-gray-100 text-gray-800 flex flex-col items-center justify-center min-h-screen">
+<body class="flex flex-col items-center justify-center min-h-screen">
 
     <div class="text-center flex flex-col items-center">
         <div x-data="confettiComponent()" class="w-auto h-auto">
             <div @click="startConfettiEffect">
-              <h1 class="underline sm:text-[red]  text-[30px]">Webpack Setup</h1>
-              <p id="message" class=" sm:text-[green]  text-[30px]"></p>              
+              <h1 class="underline sm:text-[red] text-4xl font-bold mb-4 text-[30px]">Webpack Setup</h1>
+              <p id="message" class="text-[30px]"></p>              
             </div>
 
         </div>
@@ -24,8 +26,7 @@
             </div>
         </div>
 
-        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
-        <h1 class="text-2xl font-bold mb-4">A simple HTMX request.</h1>
+        <h1 class="text-2xl font-bold mb-4 mt-[20px]">A simple HTMX request.</h1>
 
         <!-- Button to trigger HTMX request -->
         <button

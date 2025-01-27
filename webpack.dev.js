@@ -7,7 +7,7 @@ const common = require("./webpack.common")
 
 // Load environment variable
 require('dotenv').config();
-const WEBPACK_PORT = process.env.WEBPACK_PORT || 3000
+const WEBPACK_PORT = process.env.WEBPACK_PORT || 3010
 
 module.exports = merge( common, {
     mode: 'development',

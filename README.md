@@ -60,7 +60,7 @@ Before running the project, make sure you have the following installed:
 
 ## Scripts
 
-- **`npm run dev`** : Runs a dev server with HRM on localhost 3000, this is used for development.
+- **`npm run dev`** : Runs a dev server with HRM on localhost 3010, this is used for development.
 - **`npm run clean`** : Uses rimraf to delete the contents of the `./public/build` directory.
 - **`npm run build`** : Builds the css, js bundle, and a manifest in the `./public/build` directory.
 - **`npm start`** : Cleans and rebuilds the `./public/build` directory, this is used for production.
