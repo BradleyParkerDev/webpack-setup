@@ -4,17 +4,27 @@
 		"module": "commonjs",
 		"rootDir": "resources/ts",
 		"outDir": "public/js",
-    	"sourceMap": true,
+		"sourceMap": true,
 		"esModuleInterop": true,
 		"strict": true,
 		"skipLibCheck": true,
 		"resolveJsonModule": true,
-		"typeRoots": ["./node_modules/@types", "resources/ts/types"],
-		"noUnusedParameters": false,
-    "allowJs": true,
-    "checkJs": false // If you don't want to check JavaScript types
+		"typeRoots": [
+			"./node_modules/@types",
+			"resources/ts/types/entities", 
+			"resources/ts/types/global",
+			"resources/ts/types/zod"
+		],
+		"allowJs": true,
+		"checkJs": false,
+		"baseUrl": "resources/ts",
+		"paths": {
+			"@entities/*": ["types/entities/*"],
+			"@zod/*": ["types/zod/*"],
+			"@global/*": ["types/global/*"]
+		}
 	},
-	"include": ["resources/ts/**/*.ts"],
+	"include": ["resources/ts/**/*"],
 	"exclude": ["node_modules"]
-}
+  }
   
