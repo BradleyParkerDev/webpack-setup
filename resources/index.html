@@ -7,9 +7,12 @@
     <meta name="htmx-config" content='{"selfRequestsOnly":false}'>
     <title>Webpack Setup</title>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen">
+<body>
 
-    <div class="text-center flex flex-col items-center">
+	<!-- This is where the confetti and counter are. -->
+	<div id='div-1' class="flex flex-col items-center justify-center mt-[50px]">
+
+    	<div class="text-center flex flex-col items-center">
         <div id="confetti-div" class="select-none w-auto h-auto">
             <h1 class="underline sm:text-[red] text-4xl font-bold mb-4 text-[30px]">Webpack Setup</h1>
             <p id="message" class="text-[30px]"></p>              
@@ -23,7 +26,20 @@
             </div>
         </div>
 
-        <h1 class="text-2xl font-bold mb-4 mt-[20px]">A simple HTMX request.</h1>
+	<!-- This is where the registration form is. -->
+	</div>
+	<div id="div-2" class="flex justify-center w-full h-[400px] border-[black] border-dashed border-[1px] mt-[50px]">
+		<div id="registration-form" class="w-[300px] m-[10px] border-gray-500 border-solid border-[1px] rounded-[10px]">
+
+		</div>
+
+	</div>
+
+	<!-- This is where the HTMX is. -->
+	<div id='div-3' class="flex flex-col items-center justify-center mt-[50px]">
+
+
+        <h1 class="text-2xl font-bold mb-4">A simple HTMX request.</h1>
 
         <!-- Button to trigger HTMX request -->
         <button

@@ -11,7 +11,6 @@
 		"resolveJsonModule": true,
 		"typeRoots": [
 			"./node_modules/@types",
-			"resources/ts/types/entities", 
 			"resources/ts/types/global",
 			"resources/ts/types/zod"
 		],
@@ -19,9 +18,8 @@
 		"checkJs": false,
 		"baseUrl": "resources/ts",
 		"paths": {
-			"@entities/*": ["types/entities/*"],
-			"@zod/*": ["types/zod/*"],
-			"@global/*": ["types/global/*"]
+			"@global/*": ["types/global/*"],
+			"@zod/*": ["types/zod/*"]			
 		}
 	},
 	"include": ["resources/ts/**/*"],
